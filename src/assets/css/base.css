@@ -1,0 +1,79 @@
+@import "./normalize.css";
+/*css定义变量*/
+:root{
+  --color-text:#666;
+  --color-high-text:#ff577;
+  --color-tint:#ff8198;
+  --color-background:#fff;
+  --font-size:14px;
+  --line-height:1.5;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft JhengHei";
+  background-color: var(--color-background);
+}
+
+/*内外边距清零*/
+*{
+  margin:0;
+  padding:0
+}
+em,i{
+  /*去掉斜体文字的倾斜*/
+  font-style:normal
+}
+li{
+  /*去掉li小圆点*/
+  list-style:none
+}
+img{
+  /*border:0 照顾低版本浏览器 如果图片外面包含了链接会有边框的问题*/
+  border:0;
+  /*取消图片底侧有空白缝隙的问题*/
+  vertical-align:middle
+}
+button{
+  /*当我们鼠标经过按钮时，变成小手*/
+  cursor:pointer
+}
+a{
+  color:#666;
+  text-decoration:none
+}
+a:hover{
+  color:#c81623
+}
+button,input{font-family:Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif}
+body{
+  /*css3 抗锯齿形 让文字显示的更加清晰*/
+  -webkit-font-smoothing:antialiased;
+  background-color:#fff;
+  font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+  color:#666
+}
+.hide,.none{
+  display:none
+}
+/*清除浮动*/
+.clearfix:after{
+  visibility:hidden;
+  clear:both;
+  display:block;
+  content:".";
+  height:0
+}
+.clearfix{
+  *zoom:1
+}
+h2 {
+  color: #42b983;
+}
